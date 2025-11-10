@@ -1,0 +1,75 @@
+### Iris Flower Classification 
+**A complete Machine Learning project to classify Iris species using multiple algorithms**
+
+[Iris Dataset](https://github.com/mahimajai/irisflower_project/assets/123456789/iris-banner.png)  
+*Setosa • Versicolor • Virginica – 100% accuracy achieved*
+
+ A model that can classify Iris flowers into three species (Setosa, Versicolor, Virginica) based on sepal and petal measurements.  
+**Dataset:** Classic Iris dataset (150 samples, 4 features, 3 balanced classes)  
+**Result:** Multiple models trained – **Logistic Regression hits 100% accuracy!**
+
+This project covers the full ML pipeline:
+- Data loading & exploration  
+- Visualization (pair plots, correlation heatmap)  
+- Model training & comparison  
+- Evaluation with accuracy, classification report, confusion matrix  
+
+Perfect beginner project that actually works perfectly!
+
+---
+
+### Key Results (Tested on Nov 10, 2025)
+| Model                | Accuracy | Notes                          |
+|----------------------|----------|--------------------------------|
+| Logistic Regression  | **100%** | Perfect separation!            |
+| Decision Tree        | 97.37%   | Slightly overfits              |
+| K-Nearest Neighbors  | 97.37%   | Great with k=3                 |
+| Support Vector Machine | 97.37% | Linear kernel works best      |
+
+**Classification Report (Logistic Regression):**
+```
+              precision    recall  f1-score   support
+
+      Setosa       1.00      1.00      1.00        11
+  Versicolor       1.00      1.00      1.00        13
+   Virginica       1.00      1.00      1.00         8
+
+    accuracy                           1.00        32
+```
+
+
+
+### How It Works (Step-by-Step)
+1. Load Iris dataset from sklearn  
+2. Exploratory Data Analysis (EDA)  
+   - Pairplot with species coloring  
+   - Correlation heatmap  
+   - Box plots for feature distribution  
+3. Split data (70% train, 30% test)  
+4. Train 4 different classifiers  
+5. Evaluate and compare  
+6. Save the best model (Logistic Regression)  
+
+
+
+### Requirements
+```bash
+pip install scikit-learn pandas seaborn matplotlib numpy
+```
+
+
+### How to Run (Easiest Way – 30 Seconds)
+```bash
+git clone https://github.com/mahimajai/irisflower_project.git
+cd irisflower_project
+```
+
+Open in **Google Colab** (zero setup):  
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mahimajai/irisflower_project/blob/main/IRIS_FLOWER.ipynb)
+
+Just click **Run All** → You'll see:
+- Beautiful EDA plots  
+- Model comparison table  
+- Confusion matrix heatmaps  
+- 100% accuracy  
+
